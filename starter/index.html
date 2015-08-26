@@ -5,23 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angular-xeditable Starter Template</title>
     <!-- Bootstrap 3 css -->
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http:////code.jquery.com/jquery-2.1.4.min.js"></script>
     <!-- Angular.js -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <link href="ng-img-crop.css" rel="stylesheet">
+    <script src="ng-img-crop.js"></script>
     <!-- Angular-xeditable -->
     <link href="angular-xeditable/css/xeditable.css" rel="stylesheet">
     <script src="angular-xeditable/js/xeditable.js"></script>
     <!-- app.js -->
     <script src="app.js"></script>
+    <style media="screen">
+    .cropArea {
+      background: #E4E4E4;
+      overflow: hidden;
+      width:500px;
+      height:350px;
+      }
+    </style>
   </head>
   <body style="padding: 20px">
     <h1 style="margin-bottom: 20px">Angular-xeditable Starter Template</h1>
     <div ng-controller="Ctrl">
       <!-- editable element -->
       <a href="#" editable-text="user.name">{{ user.name || "empty" }}</a>
+      </br></br></br></br></br></br>
+      <div><img editable-image="myCroppedImage" ng-src="{{myCroppedImage || 'teste.png'}}" /></div>
       <div id="debug" style="margin-top: 30px">
-      {{ user | json }}
+      {{ myCroppedImage | json }}
       </div>
     </div>
   </body>
-</html>  
+</html>
