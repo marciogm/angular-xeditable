@@ -1,7 +1,7 @@
 {
   "name": "angular-xeditable",
   "description": "Edit-in-place for angular.js",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "homepage": "https://vitalets.github.io/angular-xeditable",
   "author": {
     "name": "Vitaliy Potapov",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/vitalets/angular-xeditable.git"
+    "url": "git://github.com:marciogm/angular-xeditable.git"
   },
   "engines": {
     "node": ">= 0.8.0"
